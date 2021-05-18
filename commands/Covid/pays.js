@@ -11,7 +11,7 @@ module.exports.run = async (client, message, args) => {
     .setColor(client.info.color.cyan)
     .setThumbnail(json.countryInfo.flag)
     .setAuthor(client.user.tag, client.user.displayAvatarURL())
-    .setTitle(`Stats du covid sur le continent **${json.continent}**`)
+    .setTitle(`Stats du covid sur le pays ${json.country}`)
     .addField("Cas", json.cases+"\n("+(json.todayCases >= 0 ? "+":"-")+String(Math.abs(json.todayCases)).replace(/(.)(?=(\d{3})+$)/g,'$1.')+ ")", true)
     .addField("Morts", json.deaths+"\n("+(json.todayDeaths >= 0 ? "+":"-")+String(Math.abs(json.todayDeaths)).replace(/(.)(?=(\d{3})+$)/g,'$1.')+ ")", true)
     .addField("Rétabli", json.recovered+"\n("+(json.todayRecovered >= 0 ? "+":"-")+String(Math.abs(json.todayRecovered)).replace(/(.)(?=(\d{3})+$)/g,'$1.')+ ")", true)
@@ -33,8 +33,8 @@ module.exports.run = async (client, message, args) => {
 };
 
 module.exports.help = {
-  name: "continent",
-  aliases: ["continent"],
+  name: "pays",
+  aliases: ["pays"],
   category: "covid",
   description: "Renvoie les stats d'un continent en particulier",
   usage: "<continent>",
