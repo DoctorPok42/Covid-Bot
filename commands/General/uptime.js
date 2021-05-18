@@ -8,10 +8,10 @@ module.exports.run = (client, message) => {
   const d = '```fix\n' + duration + '```'
   const embed = new MessageEmbed()
   .setTitle("⌛ Uptime ⌛")
-  .setColor(client.info.yellow)
+  .setColor(client.info.color.yellow)
   .setDescription(d)
   .setTimestamp()
-  .setFooter(client.info.footer)
+  .setFooter(client.info.em.footer)
   message.channel.send(embed)
 
 }

@@ -7,7 +7,7 @@ module.exports.run = async (client, message) => {
   const json = await res.json();
 
   const embed = new MessageEmbed()
-    .setColor( client.info.color.blurple)
+    .setColor( client.info.color.color.blurple)
     .setThumbnail("https://cdn.discordapp.com/attachments/645330547647971341/843832605341646949/map.png")
     .setAuthor(client.user.tag, client.user.displayAvatarURL())
     .setTitle("Stats total du covid")
@@ -25,7 +25,7 @@ module.exports.run = async (client, message) => {
     .addField("Taux de test", (json.testsPerOneMillion/10000).toFixed(3) + "%", true)
     .addField("Pays infectés", json.affectedCountries, true)
     .addField("Dernière mise à jour", moment(json.updated).fromNow(), true)
-    .setFooter(  client.info.em.footer)
+    .setFooter(  client.info.color.em.footer)
 
   message.channel.send(embed);
 };

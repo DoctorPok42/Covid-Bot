@@ -4,9 +4,9 @@ module.exports.run = (message) => {
   var invite_embed = new MessageEmbed()
     .setTitle("📥 Invitez moi 📥")
     .setDescription(
-      "**\n❯ Mon lien [Clique ici](https://discord.com/oauth2/authorize?client_id=843753698228436993&scope=bot&permissions=2146958847)"
+      "**\n❯ Mon lien [Clique ici](https://discord.com/oauth2/authorize?client_id=YOURBOTID&scope=bot&permissions=2146958847)"
     )
-    .setFooter(client.info.footer)
+    .setFooter(client.info.em.footer)
   message.channel.send(invite_embed);
 };
 

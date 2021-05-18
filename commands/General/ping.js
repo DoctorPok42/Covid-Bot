@@ -12,10 +12,10 @@ module.exports.run = async (client, message) => {
       true
     )
     .addField("Latence de l'API :", Math.round(client.ws.ping) + " ms", true)
-    .setColor(client.info.purple)
+    .setColor(client.info.color.purple)
     .setAuthor(client.user.username, client.user.displayAvatarURL())
     .setTimestamp()
-    .setFooter(client.info.footer)
+    .setFooter(client.info.em.footer)
 
   message.channel.send(me);
   msg.delete();

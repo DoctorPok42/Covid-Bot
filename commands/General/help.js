@@ -5,7 +5,7 @@ const { readdirSync } = require("fs"),
 module.exports.run = (client, message, args) => {
   if (!args.length) {
     const embed = new MessageEmbed()
-    .setColor( client.info.none)
+    .setColor( client.info.color.none)
       .addField("Liste des commandes", `Préfix du bot : \`${client.config.prefix}\`\n help commande : \`${client.config.prefix}help <commande_name>\``)
       .setThumbnail(client.user.displayAvatarURL())
 
@@ -22,7 +22,7 @@ module.exports.run = (client, message, args) => {
 
     const embed = new MessageEmbed()
       //.setAuthor(command.help.img, command.help.name)
-      .setColor( client.info.none)
+      .setColor( client.info.color.none)
       .setDescription(command.help.size)
       .setTitle(`Aide de la comande \`${command.help.name}\``)
       .addField("Description", `${command.help.description}`, false)
