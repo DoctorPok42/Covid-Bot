@@ -2,7 +2,7 @@
   <img src="https://github.com/DoctorPok42/Covid-Bot/blob/main/assets/logo.png">
 </div>
 
-# Covid-Bot
+# Covid-Bot [![CodeFactor](https://www.codefactor.io/repository/github/doctorpok42/covid-bot/badge)](https://www.codefactor.io/repository/github/doctorpok42/covid-bot)
 
 C'est un petit Bot pour Discord qui, pour l'instant, récolte des information sur la covid-19 quand on lui demande.
 
