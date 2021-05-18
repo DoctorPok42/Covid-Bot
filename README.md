@@ -29,5 +29,5 @@ Pour l'instant il ne dispose que de 6 commandes (2 covids et 6 generales) mais i
 [ - DoctorPok ]
 
 <div align="center">
-  <img src="ttps://github.com/DoctorPok42/Covid-Bot/blob/main/assets/img.png">
+  <img src="ttps://github.com/DoctorPok42/Covid-Bot/blob/main/assets/img.PNG">
 </div>
