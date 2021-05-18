@@ -24,4 +24,10 @@ Pour l'instant il ne dispose que de 6 commandes (2 covids et 6 generales) mais i
 
 ### Si vous faites tout cela merci de respecter les crédit qui sont dans le fichier *package.json* et le *footer* de chaque embed
 
+<hr/>
+
 [ - DoctorPok ]
+
+<div align="center">
+  <img src="https://github.com/DoctorPok42/Covid-Bot/blob/main/assets/img.PNG">
+</div>
