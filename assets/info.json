@@ -1,15 +1,19 @@
 {
-  "red": "#ED4245",
-  "orange": "#F9A72D",
-  "blurple": "#5865F2",
-  "green": "#57F287",
-  "cyan": "#5BD7E5",
-  "pink": "#E367D3",
-  "yellow": "#FEE75C",
-  "purple": "#B05AE9",
-  "white": "#ffffff",
-  "black": "#000000",
-  "none": "#2f3136",
-  "fuchsia": "#EB459E",
+  "color":{
+    "red": "#ED4245",
+    "orange": "#F9A72D",
+    "blurple": "#5865F2",
+    "green": "#57F287",
+    "cyan": "#5BD7E5",
+    "pink": "#E367D3",
+    "yellow": "#FEE75C",
+    "purple": "#B05AE9",
+    "white": "#ffffff",
+    "black": "#000000",
+    "none": "#2f3136",
+    "fuchsia": "#EB459E"
+  },
+  "em":{
   "footer": "2021 © Covid-Bot"
+  }
 }
