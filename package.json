@@ -1,0 +1,19 @@
+{
+  "name": "covid-bot",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">\r   <img src=\"https://github.com/DoctorPok42/Covid-Bot/blob/main/IMG/logo.png\">\r </div>",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DoctorPok42/Covid-Bot.git"
+  },
+  "author": "doctorpok <doctorpok42@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DoctorPok42/Covid-Bot/issues"
+  },
+  "homepage": "https://github.com/DoctorPok42/Covid-Bot#readme"
+}
