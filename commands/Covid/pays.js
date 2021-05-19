@@ -5,7 +5,7 @@ const { MessageEmbed } = require("discord.js"),
 module.exports.run = async (client, message, args) => {
   const res = await fetch(`https://corona.lmao.ninja/v3/covid-19/countries/${args[0]}?yesterday=true&twoDaysAgo=true&strict=true&allowNull=true`);
   const json = await res.json();
-  if (json.message === "Country not found or doesn't have any cases") return message.channel.send("Le continent n'a pas été trouvé\nEssayer de mieux l'écrire");
+  if (json.message === "Country not found or doesn't have any cases") return message.channel.send("Le pays n'a pas été trouvé\nEssayer de mieux l'écrire");
 
   const embed = new MessageEmbed()
     .setColor(client.info.color.cyan)
@@ -36,7 +36,7 @@ module.exports.help = {
   name: "pays",
   aliases: ["pays"],
   category: "covid",
-  description: "Renvoie les stats d'un continent en particulier",
-  usage: "<continent>",
+  description: "Renvoie les stats d'un pays en particulier",
+  usage: "<pays>",
   args: true,
 };
