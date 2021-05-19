@@ -5,11 +5,10 @@ module.exports.run = (client, message) => {
 
 
   const duration = moment(client.uptime).format(" D [days], H [hrs], m [mins], s [secs]");
-  const d = '```fix\n' + duration + '```'
   const embed = new MessageEmbed()
   .setTitle("⌛ Uptime ⌛")
   .setColor(client.info.color.yellow)
-  .setDescription(d)
+  .setDescription("\`\`\`fix\n"+duration+"\`\`\`")
   .setTimestamp()
   .setFooter(client.info.em.footer)
   message.channel.send(embed)
