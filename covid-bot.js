@@ -14,7 +14,7 @@ loadEvents(client);
 
 client.login(client.config.TOKEN);
 
-cron.schedule("* * * * *", async () => {
+cron.schedule("30 14 * * *", async () => {
 
   let colors = ['#ED4245', '#F9A72D', '#5865F2', '#57F287', '#5BD7E5', '#E367D3', '#FEE75C', '#B05AE9', '#ffffff', '#EB459E'];
 
