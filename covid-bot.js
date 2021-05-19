@@ -1,5 +1,8 @@
 const { Client, Collection } = require("discord.js");
-const { loadCommands, loadEvents } = require("./util/loader");
+const { loadCommands, loadEvents } = require("./util/loader"),
+  cron = require("node-cron"),
+  fetch = require("node-fetch"),
+  moment = require("moment");
 
 const client = new Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"] });
 client.config = require("./config");
