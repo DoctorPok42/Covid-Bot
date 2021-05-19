@@ -20,13 +20,13 @@ cron.schedule("30 14 * * *", async () => {
 
   var color = colors[Math.floor(Math.random() * colors.length)];
 
-  var continent = "france"; // votre pays
+  var pays = "france"; // votre pays
   var yesterday = "false";
   var twoDaysAgo = "false";
 
-  const res = await fetch(`https://corona.lmao.ninja/v3/covid-19/countries/${continent}?yesterday=${yesterday}&twoDaysAgo=${twoDaysAgo}&allowNull=true`);
+  const res = await fetch(`https://corona.lmao.ninja/v3/covid-19/countries/${pays}?yesterday=${yesterday}&twoDaysAgo=${twoDaysAgo}&allowNull=true`);
   const json = await res.json();
-  if (json.message === "Country not found or doesn't have any cases") return message.channel.send("Le continent n'a pas été trouvé\nEssayer de mieux l'écrire");
+  if (json.message === "Country not found or doesn't have any cases") return message.channel.send("Le pays n'a pas été trouvé\nEssayer de mieux l'écrire");
 
   const embed = new MessageEmbed()
     .setColor(color)
