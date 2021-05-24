@@ -22,7 +22,7 @@ Pour l'instant il ne dispose que de 6 commandes (2 covids et 6 generales) mais i
 
   5) Dérnièrement vous pouvez modifier l'id du channel où le bot enverra le message quand il sera en ligne, dans le fichier `./events/ready.js` à la ligne `12`
 
-### Si vous faites tout cela merci de respecter les crédit qui sont dans le fichier *package.json et le *footer de chaque embed
+### Si vous faites tout cela merci de respecter les crédit qui sont dans le fichier *package.json* et le *footer* de chaque embed
 
 <hr/>
 
@@ -32,10 +32,10 @@ Ce module qui ce trouve dans le fichier principale à partir de la ligne `17`, v
 
 ## Paramétrage
 
-*Obligatoire 
+* Obligatoire 
   - Changer l'id du channel discord à la ligne `53`
 
-*Facultatif
+* Facultatif
   - Changer le pays recherché à la ligne `23`
   - Changer les paramètres `yesterday` et `twoDaysAgo` au ligne `24` et `25`, permettans de prendre en compte les stats du covid remontant à 1 ou 2 jours.
 
