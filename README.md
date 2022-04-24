@@ -33,11 +33,11 @@ Ce module qui ce trouve dans le fichier principale à partir de la ligne `17`, v
 ## Paramétrage
 
 * Obligatoire 
-  - Changer l'id du channel discord à la ligne `53`
+  - Changer l'id du channel discord à la ligne `93`
 
 * Facultatif
   - Changer le pays recherché à la ligne `23`
-  - Changer les paramètres `yesterday` et `twoDaysAgo` au ligne `24` et `25`, permettans de prendre en compte les stats du covid remontant à 1 ou 2 jours.
+  - Changer les paramètres `yesterday` et `twoDaysAgo` au ligne `24` et `25`, permettans de prendre en compte les stats du covid remontant à 1 et ou 2 jours.
 
 <hr/>
 
